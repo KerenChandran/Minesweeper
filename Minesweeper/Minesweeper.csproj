@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95E83C90-BA21-4DAB-83EB-E0904D77AD6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Minesweeper</RootNamespace>
+    <AssemblyName>Minesweeper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DifficultySelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DifficultySelection.designer.cs">
+      <DependentUpon>DifficultySelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Minefield.cs" />
+    <Compile Include="Minefields.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DifficultySelection.resx">
+      <DependentUpon>DifficultySelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btncool.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btndead.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnscare.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsmil2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsmile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mine.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minered.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sqt0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sqt1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sqt2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bombmisflagged.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
